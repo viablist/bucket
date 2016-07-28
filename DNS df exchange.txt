@@ -1,0 +1,26 @@
+$TTL 3600
+@   IN SOA ns1.first-ns.de. postmaster.robot.first-ns.de. (
+    2016072202   ; serial
+    14400        ; refresh
+    1800         ; retry
+    604800       ; expire
+    86400 )      ; minimum
+ 
+@                        IN NS      robotns3.second-ns.com.
+@                        IN NS      robotns2.second-ns.de.
+@                        IN NS      ns1.first-ns.de.
+ 
+@                        IN A       XXXXXXXXXXXXXXXXXXX
+www                      IN A       XXXXXXXXXXXXXXXXXXX
+ftp                      IN CNAME   www
+localhost                IN A       127.0.0.1
+loopback                 IN CNAME   localhost
+
+autodiscover             IN CNAME   autodiscover.exchange2013.df.eu.
+
+imap                     IN CNAME   mxlb.ispgateway.de.
+mail                     IN CNAME   mxlb.ispgateway.de.
+pop                      IN CNAME   mxlb.ispgateway.de.
+relay                    IN CNAME   mxlb.ispgateway.de.
+smtp                     IN CNAME   mxlb.ispgateway.de.
+@                        IN MX 10   mxlb.ispgateway.de.
